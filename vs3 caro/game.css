@@ -1,0 +1,116 @@
+table, td, tr{
+    box-sizing: border-box;
+}
+
+table.gameLocation {
+    border-collapse: collapse;
+    border: 0 ;
+    
+}
+
+
+table.gameLocation tr{
+    padding: 10px;
+    height: 40px;
+    border: 0;
+}
+
+table.gameLocation tr td:first-child{
+    border-left: 0.5px solid #181c907a;
+}
+table.gameLocation tr:last-child{
+    border-bottom: 0.5px solid #181c907a;
+}
+
+table.gameLocation td{
+    padding: 10px;
+    width: 40px;
+    border: 0;
+    cursor: pointer;
+    border-right: 0.5px solid #9396ff7a;
+    border-top: 0.5px solid #9396ff7a;
+    color: aqua;
+    background: #111027fa;
+}
+table.gameLocation span.x2{
+    width: 11px;
+    background: #fff;
+    height: 1px;
+    display: block;
+    margin: 4px;
+    transform: rotate(45deg) translate(-1px,-1px) scale(3);
+}
+table.gameLocation span.x1{
+    width: 11px;
+    background: #fff;
+    height: 1px;
+    display: block;
+    margin: 4px;
+    transform: rotate(-45deg) translate(-2px,2px) scale(3);
+}
+
+table.gameLocation span.o::after{
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    border: 2px solid red;
+    border-radius: 50%;
+    transform: scale(1.5);
+    margin: auto;
+}
+
+.block{
+    display: block;
+}
+.textCenter{
+    text-align: center;
+}
+.centerX{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.centerY{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.centerXY{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.relative{
+    position: relative;
+}
+
+.m-5{
+    margin:50px;
+}
+
+.p-1{
+    padding:10px;
+}
+
+.mt-5{
+    margin-top:50px;
+}
+
+.mt-1{
+    margin-top:10px;
+}
+
+.mb-1{
+    margin-bottom:10px
+}
+.mx-auto{
+    margin-left:auto;
+    margin-right: auto;
+}
+.my-auto{
+    margin-top:auto;
+    margin-bottom: auto;
+}
